@@ -8,9 +8,9 @@ return {
     -- stylua: ignore
     keys = {
       { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
-      { "<leader>fg", "<cmd>Telescope git_files<cr>", desc = "Git Files" },
-      { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
-      { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help" },
+      { "<leader>fg", "<cmd>Telescope git_files<cr>",  desc = "Git Files" },
+      { "<leader>fb", "<cmd>Telescope buffers<cr>",    desc = "Buffers" },
+      { "<leader>fh", "<cmd>Telescope help_tags<cr>",  desc = "Help" },
     },
     opts = {
       defaults = {
@@ -76,27 +76,27 @@ return {
       wk.register(opts.defaults)
     end,
   },
-  {
-    "anuvyklack/hydra.nvim",
-    event = { "VeryLazy" },
-    opts = {
-      specs = {},
-    },
-    config = function(_, opts)
-      local hydra = require "hydra"
-      for s, _ in pairs(opts.specs) do
-        hydra(opts.specs[s]())
-      end
-    end,
-  },
-  {
-    "folke/edgy.nvim",
-    event = "VeryLazy",
-    opts = {},
-    -- opts = {
-    --   left = {
-    --     { ft = "hydra_hint", title = "Hydra", size = { height = 0.5 }, pinned = true },
-    --   },
-    -- },
-  },
+  -- {
+  --   "anuvyklack/hydra.nvim",
+  --   event = { "VeryLazy" },
+  --   opts = {
+  --     specs = {},
+  --   },
+  --   config = function(_, opts)
+  --     local hydra = require "hydra"
+  --     for s, _ in pairs(opts.specs) do
+  --       hydra(opts.specs[s]())
+  --     end
+  --   end,
+  -- },
+  -- {
+  --   "folke/edgy.nvim",
+  --   event = "VeryLazy",
+  --   opts = {},
+  --   opts = {
+  --     left = {
+  --       { ft = "hydra_hint", title = "Hydra", size = { height = 0.5 }, pinned = true },
+  --     },
+  --   },
+  -- },
 }

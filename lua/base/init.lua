@@ -1,9 +1,9 @@
 return {
-  { "tpope/vim-sleuth", event = "VeryLazy" },
-  { "tpope/vim-repeat", event = "VeryLazy" },
+  { "tpope/vim-sleuth",     event = "VeryLazy" },
+  { "tpope/vim-repeat",     event = "VeryLazy" },
+  { "tpope/vim-vinegar" },
   { "nvim-lua/plenary.nvim" },
   { "szw/vim-maximizer" },
-  { "tpope/vim-vinegar" },
   {
     "tpope/vim-fugitive",
     cmd = { "Git", "GBrowse", "Gdiffsplit", "Gvdiffsplit" },
@@ -15,17 +15,17 @@ return {
       { "<leader>gs", "<cmd>Git<cr>", desc = "Status" },
     },
   },
-  {
-    "folke/persistence.nvim",
-    event = "BufReadPre",
-    opts = { options = { "buffers", "curdir", "tabpages", "winsize", "help" } },
-    -- stylua: ignore
-    keys = {
-      { "<leader>qs", function() require("persistence").load() end, desc = "Restore Session" },
-      { "<leader>ql", function() require("persistence").load({ last = true }) end, desc = "Restore Last Session" },
-      { "<leader>qd", function() require("persistence").stop() end, desc = "Don't Save Current Session" },
-    },
-  },
+  -- {
+  --   "folke/persistence.nvim",
+  --   event = "BufReadPre",
+  --   opts = { options = { "buffers", "curdir", "tabpages", "winsize", "help" } },
+  --   -- stylua: ignore
+  --   keys = {
+  --     { "<leader>qs", function() require("persistence").load() end, desc = "Restore Session" },
+  --     { "<leader>ql", function() require("persistence").load({ last = true }) end, desc = "Restore Last Session" },
+  --     { "<leader>qd", function() require("persistence").stop() end, desc = "Don't Save Current Session" },
+  --   },
+  -- },
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
