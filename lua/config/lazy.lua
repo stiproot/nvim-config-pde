@@ -18,7 +18,7 @@ require("lazy").setup {
     { import = "base" },
     { import = "pde" },
   },
-  defaults = { lazy = true, version = nil },
+  defaults = { lazy = false, version = nil },
   -- install = { missing = true, colorscheme = { } },
   dev = { patterns = jit.os:find "OSX" and {} },
   checker = { enabled = true },
