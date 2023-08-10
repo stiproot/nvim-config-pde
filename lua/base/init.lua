@@ -4,6 +4,7 @@ return {
   { "tpope/vim-vinegar" },
   { "nvim-lua/plenary.nvim" },
   { "szw/vim-maximizer" },
+  { "github/copilot.vim" },
   {
     "tpope/vim-fugitive",
     cmd = { "Git", "GBrowse", "Gdiffsplit", "Gvdiffsplit" },

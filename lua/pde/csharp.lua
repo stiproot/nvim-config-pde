@@ -53,13 +53,19 @@ return {
 
               -- C# keymappings
               -- stylua: ignore
-              map("n","<leader>td","<cmd>w|lua require('neotest').run.run({vim.fn.expand('%'), strategy = require('neotest-dotnet.strategies.netcoredbg'), is_custom_dotnet_debug = true})<cr>", "Debug File")
+              map("n", "<leader>td",
+                "<cmd>w|lua require('neotest').run.run({vim.fn.expand('%'), strategy = require('neotest-dotnet.strategies.netcoredbg'), is_custom_dotnet_debug = true})<cr>",
+                "Debug File")
 
               -- stylua: ignore
-              map("n","<leader>tL","<cmd>w|lua require('neotest').run.run_last({strategy = require('neotest-dotnet.strategies.netcoredbg'), is_custom_dotnet_debug = true})<cr>", "Debug Last")
+              map("n", "<leader>tL",
+                "<cmd>w|lua require('neotest').run.run_last({strategy = require('neotest-dotnet.strategies.netcoredbg'), is_custom_dotnet_debug = true})<cr>",
+                "Debug Last")
 
               -- stylua: ignore
-              map("n","<leader>tN","<cmd>w|lua require('neotest').run.run({strategy = require('neotest-dotnet.strategies.netcoredbg'), is_custom_dotnet_debug = true})<cr>", "Debug Nearest")
+              map("n", "<leader>tN",
+                "<cmd>w|lua require('neotest').run.run({strategy = require('neotest-dotnet.strategies.netcoredbg'), is_custom_dotnet_debug = true})<cr>",
+                "Debug Nearest")
             end
           end)
         end,
