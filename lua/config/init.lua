@@ -12,7 +12,7 @@ return {
     java = false,
     json = false,
     julia = false,
-    jupyter = false,
+    jupyter = true,
     kotlin = false,
     lua = false,
     python = true,
