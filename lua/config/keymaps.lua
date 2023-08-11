@@ -31,6 +31,12 @@ keymap("n", "<C-j>", "<C-\\><C-n><C-w>j")
 keymap("n", "<C-k>", "<C-\\><C-n><C-w>k")
 keymap("n", "<C-l>", "<C-\\><C-n><C-w>l")
 
+-- Resizing panes
+keymap("n", "<Left>", ":vertical resize +1<CR>")
+keymap("n", "<Right>", ":vertical resize -1<CR>")
+keymap("n", "<Up>", ":resize +1<CR>")
+keymap("n", "<Down>", ":resize -1<CR>")
+
 -- Buffer navigation
 keymap("n", "<S-h>", ":bn<CR>")
 keymap("n", "<S-l>", ":bp<CR>")
