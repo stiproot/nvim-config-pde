@@ -15,7 +15,7 @@ return {
     jupyter = false,
     kotlin = false,
     lua = false,
-    python = false,
+    python = true,
     r = false,
     react = false,
     ruby = false,
