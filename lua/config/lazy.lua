@@ -21,7 +21,7 @@ require("lazy").setup {
   defaults = { lazy = false, version = nil },
   -- install = { missing = true, colorscheme = { } },
   dev = { patterns = jit.os:find "osx" and {} },
-  checker = { enabled = true },
+  checker = { enabled = false },
   performance = {
     cache = {
       enabled = true,

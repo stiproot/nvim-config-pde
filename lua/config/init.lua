@@ -8,7 +8,7 @@ return {
     elixir = false,
     flutter = false,
     go = false,
-    html = false,
+    html = true,
     java = false,
     json = true,
     julia = false,
